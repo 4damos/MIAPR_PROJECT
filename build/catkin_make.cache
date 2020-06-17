@@ -1,0 +1,2 @@
+joint_state_publisher/joint_state_publisher:joint_state_publisher/joint_state_publisher_gui:ompl_example_2d:simple_controller:urdf_tutorial
+-DCATKIN_DEVEL_PREFIX=/home/adam/catkin_ws_projekt/devel -DCMAKE_INSTALL_PREFIX=/home/adam/catkin_ws_projekt/install -G Unix Makefiles

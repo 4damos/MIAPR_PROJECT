@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/odometry_publisher.dir/src/odometry_publisher.cpp.o  -o /home/adam/catkin_ws_projekt/devel/lib/simple_controller/odometry_publisher 

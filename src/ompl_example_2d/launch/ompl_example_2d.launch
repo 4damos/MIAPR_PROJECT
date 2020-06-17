@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<launch>
+    <arg name="rvizconfig" default="$(find ompl_example_2d)/rviz/ompl.rviz" />
+  
+    <!-- map_server -->
+    <node pkg="octomap_server" type="octomap_server_node" name="octomap_server">
+		<param name="resolution" value="0.25" />
+		
+		<!-- fixed map frame (set to 'map' if SLAM or localization running!) -->
+		<param name="frame_id" type="string" value="odom" />
+		
+		<!-- maximum range to integrate (speedup!) -->
+		<param name="sensor_model/max_range" value="5.0" />
+		
+		<!-- data source to integrate (PointCloud2) -->
+		<remap from="cloud_in" to="/narrow_stereo/points_filtered2" />
+	
+	</node>
+    
+    <!-- RViz -->
+    <node pkg="rviz" name="rviz" type="rviz" output="screen" args="-d $(arg rvizconfig)"/>
+
+	<!-- Podlaczenie node'a wyswietlajacego mape -->
+  <node name="mapa" pkg="ompl_example_2d" type="mapa" output="screen"/>
+    
+    <!-- ompl-based motion planning node -->
+<!--    
+<node pkg="ompl_example_2d" name="ompl_example_2d_node" type="ompl_example_2d_node" output="screen" />
+    -->
+</launch>

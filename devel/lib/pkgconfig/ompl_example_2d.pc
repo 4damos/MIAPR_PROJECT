@@ -1,0 +1,8 @@
+prefix=/home/adam/catkin_ws_projekt/devel
+
+Name: ompl_example_2d
+Description: Description of ompl_example_2d
+Version: 0.0.1
+Cflags: -I/home/adam/catkin_ws_projekt/src/ompl_example_2d/include
+Libs: -L${prefix}/lib -lompl_example_2d_library
+Requires: roscpp message_filters sensor_msgs std_msgs geometry_msgs tf tf_conversions eigen_conversions trajectory_msgs
