@@ -2,7 +2,7 @@
 
     SCRIPTS LIST PATH:
 
-/catkin_ws_projekt/src/ompl_example_2d/src
+    /catkin_ws_projekt/src/ompl_example_2d/src
 -SCRIPT FOR PUBLISHING POINT CLOUD - mapa.cpp
 -SCRIPT FOR RRT-Connect - ompl_example_2d.cpp
 -SCRIPT FOR MARKERS (BEGIN, END) - points.cpp
